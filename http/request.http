@@ -11,8 +11,51 @@ GET {{base_url}}/current/time HTTP/1.1
 ### greeting
 GET {{base_url}}/greet/Lin HTTP/1.1
 
+
+
+# sheep
 ### add 1 sheep
 PUT {{base_url}}/sheep HTTP/1.1
 
-### current date time
+### display sheep count
 GET {{base_url}}/sheep HTTP/1.1
+
+### add specify sheep amount
+PUT {{base_url}}/sheep/9 HTTP/1.1
+
+### add sheep with obj
+POST {{base_url}}/sheep HTTP/1.1
+Content-Type: application/json
+
+{
+    "amount": 9
+}
+
+### delete 1 sheep
+DELETE {{base_url}}/sheep HTTP/1.1
+
+
+### display todo
+GET {{base_url}}/todo HTTP/1.1
+
+### add todo with json
+PUT {{base_url}}/todo HTTP/1.1
+Content-Type: application/json
+
+[
+    "second"
+]
+
+### delete a todo
+DELETE {{base_url}}/todo/1 HTTP/1.1
+
+### replace current todo list
+POST {{base_url}}/todo HTTP/1.1
+Content-Type: application/json
+
+[
+    "third",
+    "fourth"
+]
+
+
