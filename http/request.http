@@ -1,0 +1,18 @@
+@base_url = http://localhost:8080
+
+### my name
+
+GET {{base_url}}/name HTTP/1.1
+
+
+### current date time
+GET {{base_url}}/current/time HTTP/1.1
+
+### greeting
+GET {{base_url}}/greet/Lin HTTP/1.1
+
+### add 1 sheep
+PUT {{base_url}}/sheep HTTP/1.1
+
+### current date time
+GET {{base_url}}/sheep HTTP/1.1
